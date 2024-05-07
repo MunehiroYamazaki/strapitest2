@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "smls",
+  "info": {
+    "singularName": "sml",
+    "pluralName": "smls",
+    "displayName": "Sml",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "reference": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::lp.lp",
+      "inversedBy": "sml"
+    },
+    "BAtitle": {
+      "type": "string"
+    },
+    "Discription": {
+      "type": "string"
+    },
+    "Screenimage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "BAID": {
+      "type": "string"
+    }
+  }
+}

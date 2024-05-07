@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mcks",
+  "info": {
+    "singularName": "mck",
+    "pluralName": "mcks",
+    "displayName": "Mck",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "reference": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::lp.lp",
+      "inversedBy": "mck"
+    },
+    "BAtitle": {
+      "type": "string"
+    },
+    "Discription": {
+      "type": "string"
+    },
+    "Screenimage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "BAID": {
+      "type": "string"
+    }
+  }
+}

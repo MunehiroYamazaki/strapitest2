@@ -1,0 +1,134 @@
+{
+  "kind": "collectionType",
+  "collectionName": "lps",
+  "info": {
+    "singularName": "lp",
+    "pluralName": "lps",
+    "displayName": "lp",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "Title": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "Discription": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "ScreenImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "BAtitle": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "SkinURL": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "MonochikaraURL": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "CompanyURL": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "SmellURL": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "ProductURL": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "skn": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::skn.skn",
+      "mappedBy": "reference"
+    },
+    "sml": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::sml.sml",
+      "mappedBy": "reference"
+    },
+    "mck": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::mck.mck",
+      "mappedBy": "reference"
+    },
+    "cmp": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::cmp.cmp",
+      "mappedBy": "reference"
+    }
+  }
+}

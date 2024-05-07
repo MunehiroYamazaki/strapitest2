@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cmps",
+  "info": {
+    "singularName": "cmp",
+    "pluralName": "cmps",
+    "displayName": "Cmp"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "BAID": {
+      "type": "string"
+    },
+    "BAtitle": {
+      "type": "string"
+    },
+    "Discription": {
+      "type": "string"
+    },
+    "Screenimage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "reference": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::lp.lp",
+      "inversedBy": "cmp"
+    }
+  }
+}
